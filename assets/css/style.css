@@ -50,7 +50,7 @@ body {
   background: #000000;
 }
 
-.slider {
+.slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ body {
   font-size: 40px;
 }
 
-.slider a {
+.slide a {
   position: absolute;
   top: 0;
   right: 0;
@@ -74,7 +74,7 @@ body {
   left: 0;
 }
 
-.slider.active {
+.slide.active {
   z-index: 1;
   opacity: 1;
 }
