@@ -15,13 +15,13 @@
 
     transition: opacity 0.25s ease-out;
 
-    opacity: 1;
+    opacity: -1;
 
     @extend %control;
 
     &:hover,
     &:focus {
-      transition: opacity 1s ease-in 0.5s;
+      transition: opacity 1s ease-in 0.2s;
 
       opacity: 1;
       text-shadow: 0 0 30px rgba($color-light, 0.2);

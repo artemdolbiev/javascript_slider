@@ -94,13 +94,13 @@ body {
   -webkit-transition: opacity 0.25s ease-out;
   -o-transition: opacity 0.25s ease-out;
   transition: opacity 0.25s ease-out;
-  opacity: 1;
+  opacity: -1;
 }
 
 .control-pause:hover, .control-pause:focus {
-  -webkit-transition: opacity 1s ease-in 0.5s;
-  -o-transition: opacity 1s ease-in 0.5s;
-  transition: opacity 1s ease-in 0.5s;
+  -webkit-transition: opacity 1s ease-in 0.2s;
+  -o-transition: opacity 1s ease-in 0.2s;
+  transition: opacity 1s ease-in 0.2s;
   opacity: 1;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
