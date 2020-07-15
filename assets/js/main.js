@@ -47,7 +47,7 @@ Carousel.prototype = {
     },
 
     _play() {
-        this.timerId = setInterval(this._gotoNext, this.interval);
+        this.timerID = setInterval(() => this._gotoNext(), this.interval);
         this.pausePlayBtn.innerHTML = this.FA_PAUSE;
         this.isPlaying = !this.isPlaying;
     },
