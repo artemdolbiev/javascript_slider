@@ -26,7 +26,7 @@ class Carousel {
     _initProps(){
         this.currentSlide = 0;
         this.slidesCount = this.slides.length;
-        this.timerId = null;
+        this.timerID = null;
         this.isPlaying = true;
         // this.swipeStartX = null;
         // this.swipeEndX = null;
@@ -109,7 +109,7 @@ class Carousel {
 
     _pause() {
         if (this.isPlaying) {
-            clearInterval(this.timerId);
+            clearInterval(this.timerID);
             this.pausePlayBtn.innerHTML = this.FA_PLAY;
             this.isPlaying = !this.isPlaying;
         }
@@ -149,9 +149,7 @@ class Carousel {
         this._initControls();
         this._initIndicators();
         this._initListeners();
-        this.timerId = setInterval(() => {
-            this._gotoNext();
-        },  this.interval);
+        this.timerID = setInterval(() => this._gotoNext(), this.interval);
     }
 }
 
